@@ -402,12 +402,12 @@ spec:
     args: ["-c", "while true; do echo hello; sleep 10;done"]
     resources:
       requests:
-        memory: "10Gi"
-        cpu: "500m"
+        memory: "1Gi"
+        cpu: "50m"
       limits:
-        memory: "10Gi"
-        cpu: "500m"
-  priorityClassName: high
+        memory: "1Gi"
+        cpu: "50m"
+ 
 ```
 
 Apply it with `kubectl create`.
